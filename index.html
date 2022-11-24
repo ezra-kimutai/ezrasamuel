@@ -1,55 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programmers Survey Form</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <div id="heading">
-    <h1 id=title>Programmers Voice! Tell us your choice!</h1>
-    <p id="description">We love to know about which technology and tools software engineers are using world wide! Each and every Developers opinions are very precious to us!</p>
-    </div>
-    <div id="main">
-        <form id="survey-form">
-        <div id="input-fields">
-            <label id="name-label"><b>Name:</b></label>
-            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
-            <br>
-            <label id="email-label"><b>Email:</b></label>
-            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
-            <br>
-            <label id="number-label"><b>Age:</b></label>
-            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+">
-         </div>
-         <div id="dropdown-div"><br>
-            <label id="dropdown-label"><strong>Programming language you are expert at: </strong></label><br>
-            <select id="dropdown" name="code-lang" class="form">
-                <option value="C">C (Programming Language)</option>
-                <option value="Python">Python</option>
-                <option value="C#">C#</option>
-                <option value="php">PHP</option>
-                <option value="Js">Java Script</option>
-                <option value="Go">Go (Programming Language)</option>
-                <option value="ruby">Ruby on rails</option>
-                <option value="C++">C++</option>
-                <option value="Java">Java</option>
-            </select>
-         </div>
-         <div id="button-area">
-             <br>
-            <label id="job-label"><b>Employment Status:</b></label><br>
-            <input type="radio" class="radio-inline" name="gender" value="employed" checked> Full-time job holder.(Employed)<br>
-            <input type="radio" class="radio-inline" name="gender" value="freelancer"> Part-time job holder.(Freelancer)<br>
-            <input type="radio" class="radio-inline" name="gender" value="applier"> Looking for a job.(Applier)<br>
-            <input type="radio" class="radio-inline" name="gender" value="unemployed"> I am a student.(Unemployed)
-          </div>
-          <div id="button-area"><br>
-            <label id="os-label"><b>Operating system experience: </b></label><br>
-            <input type="checkbox" name="os1" value="windows" checked> I am experienced with Windows-OS<br>
-            <input type="checkbox" name="os2" value="linux"> I am experienced with Linux-OS<br>
-            <input type="checkbox" name="0s3" value="mac"> I am experienced with Mac-OS<br>
-          </div>
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-   
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="original trombones logo"
+          />
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container"></div>
+
+      <section id="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Get Started" class="btn" />
+        </form>
+      </section>
+
+
+    <script  src="js/index.js"></script>
+  </body>
+</html>
+<div class="container">
+  <section id="features">
+    <div class="grid">
+      <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+      <div class="desc">
+        <h2>Premium Materials</h2>
+        <p>
+          Our trombones use the shiniest brass which is sourced locally.
+          This will increase the longevity of your purchase.
+        </p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+      <div class="desc">
+        <h2>Fast Shipping</h2>
+        <p>
+          We make sure you recieve your trombone as soon as we have
+          finished making it. We also provide free returns if you are not
+          satisfied.
+        </p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="icon">
+        <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+      </div>
+      <div class="desc">
+        <h2>Quality Assurance</h2>
+        <p>
+          For every purchase you make, we will ensure there are no damages
+          or faults and we will check and test the pitch of your
+          instrument.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="how-it-works">
+    <iframe
+      id="video"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </section>
+  <section id="pricing">
+    <div class="product" id="tenor">
+      <div class="level">Tenor Trombone</div>
+      <h2>$600</h2>
+      <ol>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ol>
+      <button class="btn">Select</button>
+    </div>
+    <div class="product" id="bass">
+      <div class="level">Bass Trombone</div>
+      <h2>$900</h2>
+      <ol>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ol>
+      <button class="btn">Select</button>
+    </div>
+    <div class="product" id="valve">
+      <div class="level">Valve Trombone</div>
+      <h2>$1200</h2>
+      <ol>
+        <li>Plays similar to a Trumpet</li>
+        <li>Great for Jazz Bands</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ol>
+      <button class="btn">Select</button>
+    </div>
+  </section>
+  <footer>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <span>Copyright 2016, Original Trombones</span>
+  </footer>
+</div>
+</div>
+</body>
+</html>
